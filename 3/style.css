@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+.main div{
+    width: 20px;
+    height: 20px;
+    background: linear-gradient(to right, rgba(183,222,237,1) 0%, rgba(113,206,239,1) 80%, rgba(183,222,237,1) 100%);
+    border-radius: 50%;
+    margin: 0 10px;
+}
+#firstDot{
+    position: relative;
+    animation: move 1s linear 0s infinite;
+}
+#secondDot{
+    position: relative;
+    animation: move 1s linear 0.25s infinite;
+}
+#thirdDot{
+    position: relative;
+    animation: move 1s linear 0.50s infinite;
+}
+#fourthDot{
+    position: relative;
+    animation: move 1s linear 0.75s infinite;
+}
+@keyframes move{
+    0%{
+        top: 0;
+    }
+    50%{
+        top: 12px;
+    }
+    100%{
+        top: 0;
+    }
+}

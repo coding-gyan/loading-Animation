@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+span{
+    width: 10px;
+    height: 40px;
+    background-color: black;
+    margin-left: 3px;
+    transform: scaleY(0);
+    animation: animate 1s linear infinite;
+    animation-delay: calc(0.1s * var(--i));
+}
+@keyframes animate{
+    0%,100%{
+        transform: scaleY(0);
+    }
+    50%{
+        transform: scaleY(1.5);
+    }
+}
