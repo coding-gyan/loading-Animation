@@ -1,4 +1,4 @@
-# loading-Animation
+# Loading Animation
 HTML CSS
 <br>
 <h3>1.<h3>
